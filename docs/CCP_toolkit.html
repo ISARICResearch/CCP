@@ -102,6 +102,35 @@
         .steps ol li {
             margin: 10px 0;
         }
+            .accordion {
+            background: #ba0225;
+            color: #fff;
+            cursor: pointer;
+            padding: 15px;
+            width: 100%;
+            text-align: left;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .accordion:after {
+            content: '+';
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .active:after {
+            content: '-';
+        }
+        .panel {
+            padding: 15px;
+            display: none;
+            background: #F0F8FF;
+            overflow: hidden;
+        }
     </style>
 </head>
 <body>
@@ -127,7 +156,8 @@
 
         <!-- Steps for operationalisation with same format as first steps -->
         <div class="steps">
-            <h3>Steps for operationalisation of CCP </h3>
+             <h3>Steps for operationalisation of CCP </h3>
+    
             <p>This page provides an overview of the main steps for implementation of tiers 1, 2 and 3. It is important that the study is not seen as a separate activity in the facility’s response strategy to the infection of interest. 
             <p>A Principal Investigator must be appointed; They will be responsible for all aspects of the study, following the main steps outlined below.</p>
             <p> <a href="path-to-doc4.pdf" target="_blank">ISARIC CCP</a></p>
@@ -135,6 +165,8 @@
                 <img src="https://via.placeholder.com/50" alt="Step Icon">
                 <div>
                     <h3>Step 1: Determine Site Capacity and chose Tier </h3>
+                     <button class="accordion">Step 1: Determine Site Capacity and Choose Tier</button>
+                       <div class="panel">
                     <p>Adapt and amend the Clinical Characterisation Protocol (CCP) to local context/capacity.</p> 
                     <p>Conduct a review to assess the resources required to carry out the CCP locally.</p>
                     <p>Depending on local resources, interest and feasibility, chose which Tier to use. You can choose to change tier at a later date; The patient data recorded is the same for all tiers.</p>
@@ -152,6 +184,7 @@
                         <li><a href="path-to-doc3.pdf" target="_blank">Tier and sub-study record template</a></li>
 
                     </ul>
+                     </div>      
                 </div>
             </div>
 
