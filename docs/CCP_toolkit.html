@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clinical Characterisation Protcol Global Toolkit</title>
+    <title>Clinical Characterisation Protocol Global Toolkit</title>
     <style>
         body {
             font-family: 'Open Sans', sans-serif;
@@ -20,12 +20,15 @@
             font-size: 24px;
             font-weight: bold;
             position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .logo {
             position: absolute;
             left: 20px;
-            top: 10px;
-            width: 100px;
+            width: 80px;
+            height: auto;
         }
         .container {
             width: 80%;
@@ -35,76 +38,8 @@
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             border-radius: 5px;
         }
-        .step {
-            margin: 20px 0;
-            padding: 20px;
-            border-left: 5px solid #ba0225;
+        .accordion {
             background: #D3D3D3;
-            display: flex;
-            align-items: center;
-        }
-        .step img {
-            width: 50px;
-            height: 50px;
-            margin-right: 15px;
-        }
-        .tier-branches {
-            display: flex;
-            justify-content: space-between;
-        }
-        .tier {
-            width: 48%;
-            padding: 20px;
-            border-left: 5px solid #ba0225;
-            background: #F8D7DA;
-            display: flex;
-            align-items: center;
-        }
-        .tier img {
-            width: 50px;
-            height: 50px;
-            margin-right: 15px;
-        }
-        footer {
-            background: #003C71;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            margin-top: 20px;
-        }
-        .documentation {
-            margin-top: 30px;
-            padding: 20px;
-            background: #F0F8FF;
-            border-left: 5px solid #ba0225;
-            display: flex;
-            align-items: center;
-        }
-        .documentation img {
-            width: 30px;
-            height: 30px;
-            margin-right: 15px;
-        }
-        .documentation a {
-            color: #ba0225;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .steps {
-            margin-top: 30px;
-        }
-        .steps h3 {
-            color: #ba0225;
-        }
-        .steps ol {
-            margin-left: 20px;
-        }
-        .steps ol li {
-            margin: 10px 0;
-        }
-            .accordion {
-            background: #ba0225;
-            color: #fff;
             cursor: pointer;
             padding: 15px;
             width: 100%;
@@ -116,6 +51,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            border-left: 5px solid #ba0225;
         }
         .accordion:after {
             content: '+';
@@ -130,16 +66,29 @@
             display: none;
             background: #F0F8FF;
             overflow: hidden;
+            border-left: 5px solid #ba0225;
+        }
+        .step-icon {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        footer {
+            background: #ba0225;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="https://via.placeholder.com/100" alt="ISARIC Logo" class="logo">
-        Clinical Characterisation Protcol Global Toolkit
+        <img src="https://via.placeholder.com/80" alt="ISARIC Logo" class="logo">
+        Clinical Characterisation Protocol Global Toolkit
     </header>
     
-    <!-- Text outside the header -->
+ <!-- Text outside the header -->
     <div class="container">
         <p>The Clinical Characterisation Protocol (CCP) is designed for any severe or potentially severe acute infection of public health interest. It is a standardised protocol that enables data and biological samples to be collected rapidly in a globally-harmonised manner.</p>
         <p>ISARIC offers a web-based eCRF for the CCP and can host the data. For further information please contact <a href="mailto:data@isaric.org">data@isaric.org</a>.</p>
@@ -154,20 +103,20 @@
         
 
 
-        <!-- Steps for operationalisation with same format as first steps -->
+     <!-- Steps for operationalisation  -->
         <div class="steps">
              <h3>Steps for operationalisation of CCP </h3>
     
             <p>This page provides an overview of the main steps for implementation of tiers 1, 2 and 3. It is important that the study is not seen as a separate activity in the facility’s response strategy to the infection of interest. 
             <p>A Principal Investigator must be appointed; They will be responsible for all aspects of the study, following the main steps outlined below.</p>
-            <p> <a href="path-to-doc4.pdf" target="_blank">ISARIC CCP</a></p>
-            <div class="step">
-                <img src="https://via.placeholder.com/50" alt="Step Icon">
-                <div>
-                    <h3>Step 1: Determine Site Capacity and chose Tier </h3>
-                     <button class="accordion">Step 1: Determine Site Capacity and Choose Tier</button>
-                       <div class="panel">
-                    <p>Adapt and amend the Clinical Characterisation Protocol (CCP) to local context/capacity.</p> 
+            <p> <a href="path-to-doc4.pdf" target="_blank">ISARIC CCP</a></p> 
+    <div class="container">
+        <h3>Steps for Operationalisation of CCP</h3>
+        
+       <!-- STEP 1   -->
+        <button class="accordion"><img src="https://via.placeholder.com/30" alt="Step Icon" class="step-icon">Step 1: Determine Site Capacity and Choose Tier</button>
+        <div class="panel">
+         <p>Adapt and amend the Clinical Characterisation Protocol (CCP) to local context/capacity.</p> 
                     <p>Conduct a review to assess the resources required to carry out the CCP locally.</p>
                     <p>Depending on local resources, interest and feasibility, chose which Tier to use. You can choose to change tier at a later date; The patient data recorded is the same for all tiers.</p>
                     <p>Review ‘Site Capacity: Points to consider’, to assist with determining the tier level for your site. Organise a Study Master File (electronic/paper). A file which contains key documents and procedures.</p>
@@ -184,94 +133,39 @@
                         <li><a href="path-to-doc3.pdf" target="_blank">Tier and sub-study record template</a></li>
 
                     </ul>
-                     </div>      
-                </div>
-            </div>
-
-            <div class="step">
-                <img src="https://via.placeholder.com/50" alt="Step Icon">
-                <div>
-                    <h3>Step 2: Prepare Documentation/Obtain Ethics Approval</h3>
-                    <p> Organise a Study Master File (electronic/paper) A File, which contains key documents and procedures.;</p>
-                    <p><a href="path-to-doc5.pdf" target="_blank">Study master file template</a></p>
-                    <p> Develop standard operational procedures (SOPs) to be used by the study team e.g. Adapt ISARIC templates as required i.e. ISARIC Data
-                      Platform, Data Entry Guides. 
-                     <p>  Decide on electronic versus paper-based data collection; </p>
-                      <p><a href="path-to-doc7.pdf" target="_blank">Data entry guides and tools</a></p>
-                     <p> Obtain relevant approvals e.g. local ethics approval;                    
-                        <li><a href="path-to-doc6.pdf" target="_blank">Ethics application example</a></li>
-
-                      
-                  
-                </div>
-            </div>
-
-            <div class="step">
-                <img src="https://via.placeholder.com/50" alt="Step Icon">
-                <div>
-                    <h3>Step 3: Planning Resources</h3>
-                    <p>Ensure staff are trained in research (collecting patient data, processing and labelling samples). Ensure staff have access to Personal Protection Equipment (PPE) for delivering research.</p>
-                    <p>If you need editable templates of these documents, contact <a href="mailto:gsc@isaric.org">gsc@isaric.org</a> writing on the subject: CCP Global toolkit step 3 templates.</p>
-                    <p>Ensure staff are trained in research e.g. collecting patient data,
-processing and labelling samples.
-Ensure staff have access to PPE for delivering research.
-Assess consumables/technology and other resources.</p>
-                    <ul>
-                        <li><a href="path-to-doc9.pdf" target="_blank">CCP training for site staff</a></li>
-                        <li><a href="path-to-doc10.pdf" target="_blank">How to operationalise CCP Global</a></li>
-                        <li><a href="path-to-doc11.pdf" target="_blank">Competency/Training Needs checklist</a></li>
-                        <li><a href="path-to-video-url" target="_blank">ISARIC Video tutorials</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-                    <div class="step">
-            <img src="https://via.placeholder.com/50" alt="Data Collection Icon">
-            <div>
-                <h3>Step 2: Data Collection</h3>
-                <p>Sites must complete the ISARIC/WHO infection Case Report Form (CRF or eCRF).</p>
-                <ul>
-                    <li>ISARIC/WHO infection Case Report Form (paper CRF or electronic eCRF) to be completed.</li>
-                    <li>Choose Core CRF or RAPID CRF.</li>
-                    <li>Sites encouraged to enter data into the REDCap database hosted by Oxford University.</li>
-                    <li>Sites retain ownership but may contribute to combined analysis.</li>
-                </ul>
-            </div>
         </div>
 
-            <div class="step">
-                <img src="https://via.placeholder.com/50" alt="Step Icon">
-                <div>
-                    <h3>Step 4: The Patient’s Journey</h3>
-                    <p>Consider the different groups of patients like children, illiterate adults or adults who are unable to give informed consent due to mental or physical status. Consider conducting a study walk-through.</p>
-                    <p>Ensure documents like Informed Consent or other documents with sensitive data are stored safely and securely.</p>
-                    <p>This area is currently under development, in the meantime, please visit The EDCTP Knowledge Hub via The Global Health Network for tips on conducting a ‘study walk through’.</p>
-                </div>
-            </div>
+        <button class="accordion"><img src="https://via.placeholder.com/30" alt="Step Icon" class="step-icon">Step 2: Prepare Documentation/Obtain Ethics Approval</button>
+        <div class="panel">
+            <p>Organise a Study Master File (electronic/paper).</p>
+            <p>Develop standard operational procedures (SOPs) to be used by the study team.</p>
+        </div>
 
-            <div class="step">
-                <img src="https://via.placeholder.com/50" alt="Step Icon">
-                <div>
-                    <h3>Step 5: Community & Public Engagement</h3>
-                    <p>Ensure all facility staff are familiar with the concept of the study; gather input from community or patient-led groups.</p>
-                    <p>Public engagement: creation of patient and family education materials (note that other facilities and groups within the community may be interested in participating, like public health professionals, epidemiologists, etc.)</p>
-                    <p>This area is currently under development, in the meantime, please visit MESH public engagement guidance. Mesh is an online network for people working in community engagement with global health research, and is accessible via the Global Health Network platform.</p>
-                </div>
-            </div>
-
-            <div class="step">
-                <img src="https://via.placeholder.com/50" alt="Step Icon">
-                <div>
-                    <h3>Step 6: Screening & Study Enrollment</h3>
-                    <p>Ensure all correct staff have read the required documents and received appropriate training. Visit ISARIC’s Clinical Characterisation Protocol page to download all relevant resources (patient information sheets, protocol, etc.)</p>
-                </div>
-            </div>
-
+        <button class="accordion"><img src="https://via.placeholder.com/30" alt="Step Icon" class="step-icon">Step 3: Planning Resources</button>
+        <div class="panel">
+            <p>Ensure staff are trained in research (collecting patient data, processing and labelling samples).</p>
+            <p>Ensure staff have access to Personal Protection Equipment (PPE) for delivering research.</p>
         </div>
     </div>
+    
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        for (var i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
     
     <footer>
         <p><strong>License:</strong> Creative Commons Attribution-ShareAlike 4.0 International by ISARIC, on behalf of Oxford University.</p>
     </footer>
 </body>
 </html>
+
