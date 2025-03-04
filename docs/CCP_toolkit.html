@@ -68,6 +68,22 @@
             overflow: hidden;
             border-left: 5px solid #ba0225;
         }
+        .popup {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 10px;
+            z-index: 1000;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        /* Style for the trigger word */
+        .popup-trigger {
+            color: blue;
+            cursor: pointer;
+            text-decoration: underline;
+        }
         .step-icon {
             width: 30px;
             height: 30px;
@@ -77,7 +93,7 @@
             background: #ba0225;
             color: #fff;
             text-align: center;
-            padding: 10px;
+            padding: 20px;
             margin-top: 20px;
         }
     </style>
@@ -134,7 +150,7 @@
                 <p>  The currently-active module will be recorded in the site file Module Record Form. Use the <a href="https://github.com/ISARICResearch/CCP-Study-Documents/blob/main/Core/Site%20File%20Module%20and%20Sub-Study%20Record.docx" target="_blank"> Site Module and sub-study record template &#9998; </a></p> 
                          <h3>Inclusion and exclusion  criteria </h3>
                         <h4>Inclusion criteria </h4>
-                         ul>
+                         <ul>
                                     <li>  Confirmed infection with an emerging or high-consequence pathogen, or </li>
                                     <li> Suspected infection with an emerging or high-consequence pathogen, or </li>
                                     <li> Confirmed exposure to a pathogen, toxin, chemical or other exposure of public health interest, or </li>
