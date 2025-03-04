@@ -130,17 +130,18 @@
                         <li><strong> Module 3:</strong> Samples requiring local specialist laboratory  - consent required </li>
                       <li><strong> Optional  :</strong> Sub-studies  - consent required </li>
                     </ul>
-                   <p> You can choose to change tier at a later date; The patient data recorded is the same for all tiers.</p> 
+                   <p> You can choose to change module at a later date; The patient data recorded is the same for all modules.</p> 
                 <p>  The currently-active module will be recorded in the site file Module Record Form. Use the <a href="https://github.com/ISARICResearch/CCP-Study-Documents/blob/main/Core/Site%20File%20Module%20and%20Sub-Study%20Record.docx" target="_blank"> Site Module and sub-study record template &#9998; </a></p> 
                          <h3>Inclusion and exclusion  criteria </h3>
                         <h4>Inclusion criteria </h4>
-                         <ul>
-                                    <li>  Confirmed infection with an emerging or high-consequence pathogen, or
-                                    <li> Suspected infection with an emerging or high-consequence pathogen, or
-                                    <li> Confirmed exposure to a pathogen, toxin, chemical or other exposure of public health interest, or
-                                    <li>Suspected exposure to a pathogen, toxin, chemical or other exposure of public health interest, or
-                                    <li> Suspected or confirmed exposure to a pathogen, toxin, chemical or other exposure agreed with the investigators and 
-                                        local research teams for the purpose of testing CCP preparedness infrastructure in a pilot study for a maximum period of one week.
+                         ul>
+                                    <li>  Confirmed infection with an emerging or high-consequence pathogen, or </li>
+                                    <li> Suspected infection with an emerging or high-consequence pathogen, or </li>
+                                    <li> Confirmed exposure to a pathogen, toxin, chemical or other exposure of public health interest, or </li>
+                                    <li>Suspected exposure to a pathogen, toxin, chemical or other exposure of public health interest, or </li>
+                                    <li> Suspected or confirmed exposure to a pathogen, toxin, chemical or other exposure agreed with the investigators and  
+                                        local research teams for the purpose of testing CCP preparedness infrastructure in a pilot study for a maximum period of one week. </li>
+                                    </ul>
                         <h4>Exclusion criteria</h4>
                 <p>  For modules 1 and above (where consent is required), refusal to participate by patient, parent or appropriate representative.   </p>     
              <h3>Sampling </h3>
@@ -150,6 +151,36 @@
                         
                         <p> Record the inclusion criteria and sampling approach taken for each unique date range in your site level CRF. </p>  
 
+                        <p><span class="popup-trigger" onmouseover="showPopup(event)" onmouseout="hidePopup()">sampling approach</span></p>
+
+    <!-- The popup window -->
+    <div id="popup" class="popup">
+        <p>The sampling method refers to how participants are selected for a study or data collection, aiming to ensure representativeness and minimise bias in the analysis.</p>
+       <ul>
+         <li>  Ad hoc - Screen all patient as you are able without systematic selection</li>
+ <li> Census - Screen all potential participants who present to your setting.</li>
+  <li>Census for a defined population - Screen all patients admitted to ICU.</li>
+  <li>Sequential/systematic sampling - Screen patients based on their time of presentation. E.g., every 3rd patient who presents to the hospital, or all patients who present on even calendar days (2nd, 4th, 6th)</li>
+  <li>Simple random sampling - Use a tool to randomly determine if each patient is screened. E.g., use an online tool to generate a random list of Yes/No variables in the desired proportion and apply them sequentially as patients present (note: this should be done so that no one knows the next variable)</li>
+  <li>Opportunistic - No defined or consistent criteria. Patients are screened as and when staff have time available (note: this is not ideal, but sometimes necessary).</li>
+           </ul>
+    </div>
+
+    <script>
+        // Show the popup
+        function showPopup(event) {
+            var popup = document.getElementById('popup');
+            popup.style.display = 'block';
+            popup.style.top = event.clientY + 10 + 'px';
+            popup.style.left = event.clientX + 10 + 'px';
+        }
+
+        // Hide the popup
+        function hidePopup() {
+            var popup = document.getElementById('popup');
+            popup.style.display = 'none';
+        }
+    </script>
                         
           
         </div>
