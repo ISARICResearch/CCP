@@ -92,6 +92,17 @@
             height: 30px;
             margin-right: 10px;
         }
+           .side-panel {
+            width: 25%;
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin-left: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        .side-panel h3 {
+            color: #ba0225;
+        }
       .footer {
             background: rgb(186, 2, 37);
             colour: #fff;
@@ -104,11 +115,13 @@
 <body>
     <header>
         <img src="assets/isaric_logo.PNG"  class="logo">
-        Clinical Characterisation Protocol Global Toolkit
+        ISARIC Clinical Characterisation Protocol Global Toolkit
     </header>
     
  <!-- Text outside the header -->
     <div class="container">
+        <div style="display: flex; justify-content: space-between;">
+            <div style="width: 70%;"> <!-- Main content area -->
         <p>The Clinical Characterisation Protocol (CCP) is designed for any severe or potentially severe acute infection of public health interest. It is a standardised protocol 
             that enables data and biological samples to be collected rapidly in a globally-harmonised manner.</p>
         ISARIC has partnered with global experts to adapt its Clinical Epidemiology Platform, enabling research on the clinical characteristics of emerging infectious disease outbreaks 
@@ -118,7 +131,7 @@
     <p>The ISARIC-WHO Clinical Characterisation Protocol and the ISARIC Clinical Epidemiology Platform is a suite of openly-available, standardised tools to support your research and facilitate global
     collaboration.  Tools within this platform will help you to create a Case Report Form (CRF), launch a database, and perform statistical analysis on the data you collect.The resources are free to use. ISARIC provides support
     to implement them and supports researchers to retain control of the data and samples they collect.</p>
-
+        </div>
 
     <!-- Steps for operationalisation  -->
         
@@ -132,23 +145,29 @@
            <p>We ask that ISARIC is acknowledged and informed if you implement the protocol. Ethical approval of the protocol and all necessary operational and financial arrangements are the responsibility of the investigators.</p>
                     <p> Download and read the last version of the <a href="https://github.com/isaric-ccp/ccp/raw/main/protocol/ISARIC_CCP_v3.3.docx" target="_blank">ISARIC Global Clinical Characterisation Protocol </a></p>      
 
+            <div class="side-panel"> <!-- Right side panel -->
+                <h3>Disease-specific CCP </h3>
+                <p>Implementation Outbreak Response Guidance </p>
+                   <p> Cases Study</p>
+            </div>
             
      <!-- STEP 1   -->
-        <button class="accordion"><font color="#ba0225">Step 1 Determine Site Capacity and Choose Module(s) </font> </button>
+        <button class="accordion"><font color="#ba0225">Step 1:Determine Site Capacity and Choose Module(s) </font> </button>
         <div class="panel">
-             <ul>
-             <li>Conduct a review to assess the resources required to carry out the CCP locally. Review the  <a href="https://isaricresearch.github.io/CCP-Study-Documents/capacity" target="_blank">‘Site Capacity: Points to consider’</a>
-                        to assist with determining the module(s) use, inclusion criteria and sampling strategy for your site. </li>
-            <h3>Module </h3>
-                    <li>Depending on local resources, interest and feasibility, chose which Module(s) to use. 
+              <h3>Assess your site capacity </h3>
+            
+             <p>Conduct a review to assess the resources required to carry out the CCP locally. Review the  <a href="https://isaricresearch.github.io/CCP-Study-Documents/capacity" target="_blank">‘Site Capacity: Points to consider’</a>
+                        to assist with determining the module(s) use, inclusion criteria and sampling strategy for your site. </p>
+            <h3>Choose module(s) to use </h3>
+                    <p>Depending on local resources, interest and feasibility, chose which Module(s) to use. </p>
                         <img src="https://github.com/ISARICResearch/CCP-Study-Documents/blob/main/docs/assets/isaric_logo.PNG" alt="CCP Modules">
-                         <ul>
+                    <!--      <ul>
                        <li><strong>Module 0:</strong> Data and clinical samples only - no consent required in many legislation </li>
                         <li><strong>Module 1:</strong> Simple and stable samples - consent required.</li>
                         <li><strong> Module 2:</strong> Samples requiring local laboratory  - consent required </li>
                         <li><strong> Module 3:</strong> Samples requiring local specialist laboratory  - consent required </li>
-                      <li><strong> Optional  :</strong> Sub-studies  - consent required </li>
-                    </ul>
+                      <li><strong> Optional  :</strong> Sub-studies  - consent required </li> 
+                    </ul> -->
                    <p> You can choose to change module at a later date; The patient data recorded is the same for all modules.</p> 
                 <p>  The currently-active module will be recorded in the site file Module Record Form. Use the <a href="https://github.com/ISARICResearch/CCP-Study-Documents/blob/main/Core/Site%20File%20Module%20and%20Sub-Study%20Record.docx" target="_blank"> Site Module and sub-study record template &#9998; </a></p> 
                          <h3>Inclusion and exclusion  criteria </h3>
@@ -179,11 +198,11 @@
                    participant recruitment and should select the sampling approach that fits best.</p>
        <ul>
          <li>  Ad hoc - Screen all patient as you are able without systematic selection</li>
- <li> Census - Screen all potential participants who present to your setting.</li>
-  <li>Census for a defined population - Screen all patients admitted to ICU.</li>
-  <li>Sequential/systematic sampling - Screen patients based on their time of presentation. E.g., every 3rd patient who presents to the hospital, or all patients who present on even calendar days (2nd, 4th, 6th)</li>
-  <li>Simple random sampling - Use a tool to randomly determine if each patient is screened. E.g., use an online tool to generate a random list of Yes/No variables in the desired proportion and apply them sequentially as patients present (note: this should be done so that no one knows the next variable)</li>
-  <li>Opportunistic - No defined or consistent criteria. Patients are screened as and when staff have time available (note: this is not ideal, but sometimes necessary).</li>
+ <li>  <b>Census </b> - Screen all potential participants who present to your setting.</li>
+  <li> <b>Census for a defined population </b> - Screen all patients admitted to ICU.</li>
+  <li> <b>Sequential/systematic sampling</b> - Screen patients based on their time of presentation. E.g., every 3rd patient who presents to the hospital, or all patients who present on even calendar days (2nd, 4th, 6th)</li>
+  <li> <b>Simple random sampling</b> - Use a tool to randomly determine if each patient is screened. E.g., use an online tool to generate a random list of Yes/No variables in the desired proportion and apply them sequentially as patients present (note: this should be done so that no one knows the next variable)</li>
+  <li> <b>Opportunistic</b> - No defined or consistent criteria. Patients are screened as and when staff have time available (note: this is not ideal, but sometimes necessary).</li>
            </ul>
    
             <a href="#" style="display: inline-block; margin-top: 10px; padding:
@@ -195,29 +214,34 @@
           
         </div>
      <!-- STEP 2   -->
-        <button class="accordion"> <font color="#ba0225">Step 2 </font>Prepare your protocol and study documentation /Obtain Ethics Approval</button>
+        <button class="accordion"> <font color="#ba0225">Step 2:Prepare your protocol and study documentation /Obtain Ethics Approval </font></button>
         <div class="panel">
-         <h3>Protocol  </h3>
+         <h3> Prepare your protocol  </h3>
             <p>Adapt and amend the Clinical Characterisation Protocol (CCP) to local context/capacity.</p> 
             <p>  Several sites have used the CCP to create their own regionally-specific versions for specific response activities. Examples are available at the links below. </p>
-                    <h3>Ethics and regulatory approval  </h3>
-                       <p>  Be sure to obtain relevant the ethics and regulatory approvals required for your study
-                       <a href="https://github.com/ISARICResearch/CCP-Study-Documents/blob/main/Core/Ethics_Example_Text.docx" target="_blank">Ethics application example &#9432;</a> </p>
-               <h3>Study documentation  </h3>
+
+             <h3> Prepare your Statical Analysis Plan (SAP)  </h3>
+            <p>Adapt and amend the Clinical Characterisation Protocol (CCP) to local context/capacity.</p> 
+            <p>  Several sites have used the CCP to create their own regionally-specific versions for specific response activities. Examples are available at the links below. </p>
+                    
+               <h3>  Prepare your Study documentation  </h3>
                        <p> Organise a Study Master File (electronic/paper). This file should contain key documents and procedures.Use this
                     <a href="path-to-doc5.pdf" target="_blank">Study master file template</a></p>
                     <p> Develop standard operational procedures (SOPs) to be used by the study team e.g. Adapt ISARIC templates as required i.e. ISARIC Data
                       Platform, Data Entry Guides.  <a href="https://github.com/ISARICResearch/CCP-Study-Documents/tree/main/Core/PIS" target="_blank">Patient Information Sheets templates</a></p>
              <p> Develop patients information sheet and consent form (PISC) to be used by the study team to enrol participants when consent is required 
                      <a href="path-to-doc7.pdf" target="_blank">Data entry guides and tools</a></p>
+            <h3>Obtain Ethics and regulatory approval  </h3>
+                       <p>  Be sure to obtain relevant the ethics and regulatory approvals required for your study
+                       <a href="https://github.com/ISARICResearch/CCP-Study-Documents/blob/main/Core/Ethics_Example_Text.docx" target="_blank">Ethics application example &#9432;</a> </p>
                               
                  </div>
 
 
               <!-- STEP 3   -->
-        <button class="accordion"> <font color="#ba0225"> Step 3  </font> Prepare data collection</button>
+        <button class="accordion"> <font color="#ba0225"> Step 3:Prepare data collection </font> </button>
         <div class="panel">
-         <h3>Case Report Form </h3>
+         <h3>Prepare the Case Report Form </h3>
              <p> ISARIC and partners have developed a ARChetype standardised case report form (CRF) for mpox, H5Nx, Covid and Dengue. </p>
                  <p> The form includes the variables needed to efficiently characterise the natural history of the disease, regions, time and populations. It is structured to quickly identify risk factors for severe outcomes, 
             understand the mechanisms of disease, and provide key evidence to inform the design of clinical trials.</p>
@@ -233,10 +257,10 @@
             data dictionary to set up a REDCap database that matches your CRF.
            <ul>
             <li> If your institution uses REDCap, upload the XML file and data dictionary to a REDCap project to launch a database for your study.
-            Instructions (Quick Start): How to generate an ISARIC approved CRF and database using BRIDGE  </li> 
-           <li> If your institution does not currently host REDCap software, but would like to, you can find installation instructions and technical requirements on the REDCap home page. 
-            REDCap Installation (external) 
-            The data dictionary can also be used to design a database in any other data management software you prefer.</li> 
+            Instructionson  <a href="https://isaricresearch.github.io/Training/bridge_starting#bridge-files" target="_blank"> " "How to generate an ISARIC approved CRF and database using BRIDGE" &#9432; </a>  </li> 
+           <li> If your institution does not currently host REDCap software, but would like to, you can find installation instructions and technical requirements on the <a href=" https://projectredcap.org/software/requirements/ REDCap home page" target="_blank">. 
+   
+            <li> The data dictionary can also be used to design a database in any other data management software you prefer.</li> 
             <p> ISARIC has a REDCap database for all the ARChetype CRFs available for use by any sites that decide not to run their own data management software. Support and hosting are
                provided by ISARIC.  
             <p>Please contact data@isaric.org for support, to launch a database, host data, map to the ISARIC data model, or anything else we can assist with.</p>
@@ -244,16 +268,18 @@
                  </div>
 
       <!-- STEP 4   -->
-        <button class="accordion"><font color="#ba0225"> Step 4  </font> Planning Resources</button>
+        <button class="accordion"><font color="#ba0225"> Step 4:Train staff and plan Resources </font></button>
         <div class="panel">
-           <p>Ensure staff are trained in research (collecting patient data, processing and labelling samples).  </p>
-              <p>  Ensure staff have access to Personal Protection Equipment (PPE) for delivering research.</p>
-                <p>Assess consumables/technology and other resources.</p>
-                    <ul>
-                        <li><a href="path-to-doc9.pdf" target="_blank">CCP training for site staff</a></li>
-                        <li><a href="path-to-doc10.pdf" target="_blank">How to operationalise CCP Global</a></li>
-                        <li><a href="path-to-doc11.pdf" target="_blank">Competency/Training Needs checklist</a></li>
+            <u> 
+            <li> Ensure staff are trained in research (collecting patient data, processing and labelling samples).  </p>
+                    <p><a href="https://github.com/ISARICResearch/CCP-Study-Documents/blob/main/Core/CCP_Global_Toolkit_Step_3_Competencies.pdf" target="_blank">Competency/Training Needs checklist</a></p>
+                    <p></p><a href="https://github.com/ISARICResearch/CCP-Study-Documents/blob/main/Core/CCP_Global_Toolkit_Step_3_Training_for_Site_Staff%20(3).pptx" target="_blank">CCP training for site staff</a></p>
+                    <p><a href="https://github.com/ISARICResearch/CCP-Study-Documents/blob/main/Core/CCP_Global_Toolkit_Step_3_Training_for_Site_Staff%20(3).pptx" target="_blank">CCP training for site staff</a></li>><a href="path-to-doc10.pdf" target="_blank">How to operationalise CCP Global</a></p>
                         <li><a href="path-to-video-url" target="_blank">ISARIC Video tutorials</a></li>
+              <li>  Ensure staff have access to Personal Protection Equipment (PPE) for delivering research.</li>
+                <li>Assess consumables/technology and other resources.</li>
+                                  
+                    
                     </ul>
                 
             </div>
@@ -262,26 +288,26 @@
 
 
       <!-- STEP 5   -->
-        <button class="accordion"> <font color="#ba0225"> Step 5  </font> The Patient’s Journey </button>
+        <button class="accordion"> <font color="#ba0225"> Step 5:Understand The Patient’s Journey   </font> </button>
         <div class="panel">
       <p>Consider the different groups of patients like children, illiterate adults or adults who are unable to give informed consent due to mental or physical status.  </p>
-        <p>  Consider conducting a study walk-through, please visit <a href="https://edctpknowledgehub.tghn.org/protocol-development/study-walkthrough-toolkit/" target="_blank"> The EDCTP Knowledge Hub  </a> via The Global Health Network for tips on conducting a ‘study walk through’.</p></p>
+        <p>  Consider conducting "The study walk-through method"  to help translate your protocol into an accurate and successful study. Please visit <a href="https://edctpknowledgehub.tghn.org/protocol-development/study-walkthrough-toolkit/" target="_blank"> The EDCTP Knowledge Hub  </a> via The Global Health Network for tips on conducting a ‘study walk through’.</p></p>
                     <p>Ensure documents like Informed Consent or other documents with sensitive data are stored safely and securely.</p>
     
               
             </div>
 
               <!-- STEP 6   -->
-        <button class="accordion"> <font color="#ba0225"> Step 6  </font> Community & Public Engagement </button>
+        <button class="accordion"> <font color="#ba0225"> Step 6:Engage Community & Public  </font></button>
         <div class="panel">
       <p>Ensure all facility staff are familiar with the concept of the study; gather input from community or patient-led groups.</p>
                     <p>Public engagement: creation of patient and family education materials (note that other facilities and groups within the community may be interested in participating, like public health professionals, epidemiologists, etc.)</p>
-                    <p>This area is currently under development, in the meantime, please visit MESH public engagement guidance. Mesh is an online network for people working in community engagement with global health research, and is accessible via the Global Health Network platform.</p>
+                    <p>This area is currently under development, in the meantime, please visit <a href="https://mesh.tghn.org/" target="_blank">  MESH public engagement guidance </a>. Mesh is an online network for people working in community engagement with global health research, and is accessible via the Global Health Network platform.</p>
 
             </div>
 
               <!-- STEP 7   -->
-        <button class="accordion"> <font color="#ba0225"> Step 7  </font> Screening & Study Enrollment </button>
+        <button class="accordion"> <font color="#ba0225"> Step 7  </font> Start Screening & Study Enrollment </button>
         <div class="panel">
       <p>Ensure all correct staff have read the required documents and received appropriate training. </p>
               
@@ -299,8 +325,8 @@
         VERTEX is built using reproducible analytical pipelines. It is designed to allow ISARIC partners and the broader scientific community to develop, contribute to, and share their own analytic 
        codes so that other researchers can use and reproduce them. </p>
               <ul>
-                        <li><a href="path-to-doc9.pdf" target="_blank">How to get started with VERTEX</a></li>
-                        <li><a href="path-to-doc10.pdf" target="_blank">How to create additional visualisations for the VERTEX dashboard</a></li>
+                        <li><a href="https://isaricresearch.github.io/Training/vertex_starting" target="_blank">How to get started with VERTEX</a></li>
+                        <li><a href="https://isaricresearch.github.io/Training/insight_panel">How to create additional visualisations for the VERTEX dashboard</a></li>
                     </ul
    </div>
         </div>
