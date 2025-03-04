@@ -68,6 +68,15 @@
             overflow: hidden;
             border-left: 5px solid #ba0225;
         }
+            .popup {
+            display: none;
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
           .popup-content {
             background: #fff;
             padding: 20px;
@@ -156,12 +165,12 @@
              <h3>Sampling </h3>
                       <p>  In some circumstances, robust analysis requires methodical selection of patients for data collection. This is usually the case where the primary aim is large-scale
                         data collection to explore the features of, and risk factors for, illness. Each site has its own requirements, abilities, and limitations to participant recruitment 
-                        and should select the sampling approach that fits best. 
+                        and should select the <a href="#popup" style="padding: 10px 20px; background-color: #007BFF; 
+                            color: #fff; text-decoration: none; border-radius: 5px;">sampling approach</a> that fits best. 
                         
                         <p> Record the inclusion criteria and sampling approach taken for each unique date range in your site level CRF. </p>  
 
-                        <a href="#popup" style="padding: 10px 20px; background-color: #007BFF; 
-                            color: #fff; text-decoration: none; border-radius: 5px;">sampling approach</a>
+                        
     <div id="popup" class="popup">
         <div class="popup-content">
             <h2> Type of sampling </h2>
