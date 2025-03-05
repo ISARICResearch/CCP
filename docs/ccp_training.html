@@ -1,91 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ISARIC CCP Ressources for training</title>
-  <link rel="stylesheet" href="square_styles.css">
-  <style>
-       body {
-            padding-top: 56px;
-        }
-           .card {
-            cursor: pointer;
-        }
-        header {
-            background: rgb(186, 2, 37);
-            colour: #fff;
-            padding: 20px 0;
-            text-align: center;
-            position: relative;
-        }
-        header img {
-            position: absolute;
-            left: 20px;
-            top: 10px;
-            width: 60px;
-            height: auto;
-            cursor: pointer;
-        }
-        header h1 {
-            colour: #fff;
-            margin: 0;
-            font-size: 2em;
-        }
-       
-    
-        h2 {
-            colour: rgb(186, 2, 37);
-        }
-        
-        .footer {
-            background: rgb(186, 2, 37);
-            colour: #fff;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
-        }
-  </style>
-</head>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
 
-  <body>
-    <div class="container">
-        <section id="templates">
-            <h2 class="mt-4">Templates</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card" onclick="location.href='link_to_generic_protocol.html';">
-                        <div class="card-body">
-                            <h5 class="card-title">CCP Generic Protocol</h5>
-                            <p class="card-text">Learn more about the generic protocol.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card" onclick="location.href='link_to_dengue_protocol.html';">
-                        <div class="card-body">
-                            <h5 class="card-title">CCP for Dengue</h5>
-                            <p class="card-text">Implemented in South Asia in 2024.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card" onclick="location.href='link_to_mpox_protocol.html';">
-                        <div class="card-body">
-                            <h5 class="card-title">CCP for Mpox</h5>
-                            <p class="card-text">Implemented in Rwanda in 2024.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-    
+header {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
 
-  <div class="footer">
-    <p style="color:White">Please contact <a href="mailto:data@isaric.org">data@isaric.org</a></p>
-  </div>
-</body>
-</html>
+.logo {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    margin: 30px 0 15px;
+    color: #333;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.competency {
+    background: #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.competency:hover {
+    background: #d0d0d0;
+    transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
