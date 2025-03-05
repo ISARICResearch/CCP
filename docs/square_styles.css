@@ -32,6 +32,8 @@ body {
     max-width: 2000px;
     margin: auto;
     padding: 20px;
+    margin-bottom: 40px; 
+    border-bottom: 2px solid #ba0225; 
 }
 
 .section-title {
