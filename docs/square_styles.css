@@ -5,6 +5,10 @@ body {
     text-align: center;
 }
 
+a {
+   text-decoration: none;
+} 
+
       header {
             background: #ba0225;
             color: #fff;
