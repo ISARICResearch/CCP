@@ -13,6 +13,7 @@
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
+           line-height: 1.8; /* Adjust as needed */
         }
         header {
             background: #ba0225;
@@ -138,7 +139,7 @@
 <body>
     <header>
          <a href="https://isaric.org/"> <img src="assets/isaric_logo.PNG"  class="logo"> </a>
-        Toolkit for Operationalising the Clinical Characterisation Protocol
+        Toolkit for Operationalising the ISARIC Clinical Characterisation Protocol
     </header>
 
         
@@ -149,10 +150,15 @@
         <div style="display: flex; justify-content: space-between;">
          
             <div style="width: 70%;"> <!-- Main content area -->
-        <p>The Clinical Characterisation Protocol (CCP) is a standardised approach for studying anhy severe or potentially severe infections of public health concern. It allows rapid collection of data and biological samples in a globally coordinated way.</p>
- <p>ISARIC has worked with global experts to adapt its Clinical Epidemiology Platform, supporting research on emerging infectious diseases to improve patient care and guide health policies. This platform provides tools to help researchers set up studies, 
-            analyse outbreaks, and inform clinical trials. It also enables collaboration across different variants, countries, and time periods.The ISARIC-WHO CCP and Clinical Epidemiology Platform offer free, standardised tools to support research, 
-            including Case Report Forms (CRFs), databases, and statistical analysis. ISARIC provides guidance while ensuring researchers retain control of their data and samples</p>
+        <p>The **ISARIC Clinical Characterisation Protocol (CCP)** is a standardised framework for studying severe or potentially severe infections of public health
+                concern. It enables the rapid and globally coordinated collection of data and biological samples. Researchers can customise investigations according
+                to their specific objectives and available resources.</p>
+         <p>To facilitate the collection and analysis of clinical data, ISARIC has developed the **Clinical Epidemiology Platform**. This platform comprises a suite
+                 of integrated tools, including ARChetype Case Report Forms (CRFs), databases, and statistical analysis tools, helping researchers launch studies, 
+                  analyse data, and foster collaboration.
+               <p>The **ISARIC CCP and Clinical Epidemiology Platform** provide free, standardised tools to support research on emerging infectious diseases, 
+                       improve patient care, and guide health policies.</p> 
+                    <p>ISARIC offers guidance while ensuring that researchers retain full control over their data and samples.</p>
         
         
              <h3>Implementing CCP </h3>
@@ -184,14 +190,82 @@
         
 <!-- Steps for operationalisation  -->            
      <!-- STEP 1   -->
-        <button class="accordion"><font color="#ba0225"> <i class="material-icons"> checklist</i> Step 1:Determine Site Capacity and Choose Module(s)</font> </button>
+        <button class="accordion"><font color="#ba0225"> <i class="material-icons"> checklist</i> Step 1:Determine your Research objectivs and your Site Capacity </font> </button>
         <div class="panel">
+               <h3>Define your research objectives </h3>
+               <p> Research objectives should be determined based on their potential to deliver impact in the context of other initiatives, including public health 
+                       response. The strategy below initiates with a broad scope, then aggressively de-escalates as research questions are answered.</p> 
+
+                                <table border="1">
+                                    <thead>
+                                        <tr>
+                                            <th>Research Objectives</th>
+                                            <th>Data / Bio-sample</th>
+                                            <th>Recruitment Goals</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Clinical characterisation of presentations, risk factors, disease progression and outcomes</td>
+                                            <td>Data only - Core CRF</td>
+                                            <td>Up to 1000 hospitalised cases</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Clinical characterisation of prognosis and burden of disease</td>
+                                            <td>Data only - Minimal CRF</td>
+                                            <td>Unlimited number of hospitalised cases</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Virology: Test diagnostics</td>
+                                            <td>Fresh samples containing live virus</td>
+                                            <td>Up to 100 hospitalised cases</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Virology: Viral sequencing</td>
+                                            <td>Virus inactivated by guanidine thiocyanate</td>
+                                            <td>Unlimited number of hospitalised cases</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Host genetics: Characterise mechanisms, prioritise new treatments</td>
+                                            <td>Whole blood; virus inactivated by guanidine thiocyanate</td>
+                                            <td>Up to 10,000 hospitalised cases; scaling down to critically ill only (through GenOMICC) in a large outbreak</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Transcriptome: Characterise response, predictors, mechanisms</td>
+                                            <td>Virus inactivated by guanidine thiocyanate</td>
+                                            <td>Up to 1000 hospitalised cases</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Proteome: Characterise response, predictors, mechanisms</td>
+                                            <td>Serum/plasma with virus inactivated by gamma irradiation</td>
+                                            <td>Up to 1000 hospitalised cases</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Serology: Impact of prior exposure, evolution of antibody response</td>
+                                            <td>Serum/plasma with virus inactivated by gamma irradiation</td>
+                                            <td>Up to 500 cases of any severity, or up to 500 hospitalised cases in a large outbreak</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Only in sites with advanced research infrastructure: Cell mediated immunity; B cells for antibody production</td>
+                                            <td>Fresh whole blood, no viral inactivation</td>
+                                            <td>Up to 100 cases of any severity</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pharmacokinetics</td>
+                                            <td>Multiple body fluids</td>
+                                            <td>Up to 100 cases of any severity</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+
+                
               <h3>Assess your site capacity </h3>
             
              <p>Conduct a review to assess the resources required to carry out the CCP locally. Review the  <a href="https://isaricresearch.github.io/CCP-Study-Documents/capacity_checklist" target="_blank" style="padding: 5px 10px; background-color: #618685; color: #fff; text-decoration: none; border-radius: 5px; " > Site Capacity: Points to consider Checklist <i class="fa-solid fa-list"></i> </a>
                         to assist with determining the module(s) use, inclusion criteria and sampling strategy for your site. </p>
             <h3>Choose module(s) to use </h3>
-                    <p>Depending on local resources, interest and feasibility, chose which Module(s) to use. </p>
+                    <p>Depending on local resources, reserch objectives and feasibility, chose which Module(s) to use. </p>
                             <object width="1000"  data="assets/ccp_t3.svg" type="image/svg+xml"></object>
                       
                     <!--      <ul>
@@ -251,9 +325,9 @@
             <p>  Several sites have used the CCP to create their own regionally-specific versions for specific response activities. Examples are available in <a href="https://isaricresearch.github.io/CCP-Study-Documents/ccp_resources"  target="_blank" style="padding: 5px 10px; background-color: #ba0225; color: #fff; text-decoration: none; border-radius: 5px;" > CCP Resources Library </a> </p> 
        
                <h3>  Develop your Study documentation  </h3>
-                       <p> Organise a Study Master File (SMF). This file (electronic/paper)should contain key documents and procedures.</p>
-                           <p>Download the  <a href="https://github.com/ISARICResearch/CCP-Study-Documents/blob/main/Core/CCP_Study_Master_File.zip" target="_blank" style="padding: 5px 10px; background-color: #618685; color: #fff; text-decoration: none; border-radius: 5px;"  > Study master file Stucture template &#9998;</a></p>
-                     <p>  Use the  <a href="https://github.com/ISARICResearch/CCP-Study-Documents/blob/main/Core/Study_Master_File_Template.docx"  target="_blank" style="padding: 5px 10px; background-color: #618685; color: #fff; text-decoration: none; border-radius: 5px;" >SMF guide </a> to complete and organise it. </p>
+                       <p> Organise a Study Master File (SMF). This file (electronic/paper) should contain key documents and procedures.</p>
+                           <p>Download the  <a href="https://github.com/ISARICResearch/CCP-Study-Documents/blob/main/Core/CCP_Study_Master_File.zip" target="_blank" style="padding: 5px 10px; background-color: #618685; color: #fff; text-decoration: none; border-radius: 5px;"  > SMF Stucture template &#9998;</a>  and  u
+                                   se the  <a href="https://github.com/ISARICResearch/CCP-Study-Documents/blob/main/Core/Study_Master_File_Template.docx"  target="_blank" style="padding: 5px 10px; background-color: #618685; color: #fff; text-decoration: none; border-radius: 5px;" >SMF guide </a> to complete and organise it. </p>
                     <p> Develop standard operational procedures (SOPs) to be used by the study team e.g. Adapt ISARIC templates as required i.e. ISARIC Data
                       Platform, Data Entry Guides.  <a href="https://isaricresearch.github.io/Training/data_entry_redcap.html" target="_blank" style="padding: 5px 10px; background-color: #618685; color: #fff; text-decoration: none; border-radius: 5px; " >Data entry guides and tools</a></p> 
              <p> Develop patients information sheet and consent form (PISC) to be used by the study team to enrol participants when consent is required  <a href="https://github.com/ISARICResearch/CCP-Study-Documents/tree/main/Core/PIS" style="padding: 5px 10px; background-color: #618685; color: #fff; text-decoration: none; border-radius: 5px; target="_blank">Patient Information Sheets templates &#9998;</a></p>
@@ -270,11 +344,11 @@
         <div class="panel">
          <h3>Prepare the Case Report Form (CRF) </h3>
              <p> ISARIC and partners have developed a ARChetype standardised CRFs for mpox, H5Nx, Covid and Dengue. </p>
-                 <p> The forms include the variables needed to efficiently characterise the natural history of the disease, regions, time and populations. It is structured to quickly identify risk factors for severe outcomes, 
-            understand the mechanisms of disease, and provide key evidence to inform the design of clinical trials.</p>
+                 <p> The forms include the variables needed to efficiently characterise the natural history of the disease, regions, time and populations. 
+                 It is structured to quickly identify risk factors for severe outcomes,understand the mechanisms of disease, and provide key evidence toiInform clinical care, public health response, and clinical trial design.</p>
             To know more on the <a href="https://isaricresearch.github.io/CCP-Study-Documents/ARChetype-CRF-Guidelines.html" target="_blank" style="padding: 5px 10px; background-color: #618685; color: #fff; text-decoration: none; border-radius: 5px;">ISARIC ARchetype Case Report Form Creation Process &#9432; </a></p>
 
-           <p> You can use the ISARIC ARChetype CRF as designed, or tailor it to your context by adding or removing variables using our <a href="https://isaric-bridge.replit.app/"  style="padding: 5px 10px; background-color: #ba0225; color: #fff; text-decoration: none; border-radius: 5px;  target=""_blank"> CRF Generator BRIDGE </a>.</p>
+           <p> You can use the ISARIC ARChetype CRF as designed, or tailor it to your context by adding or removing variables using  <a href="https://isaric-bridge.replit.app/"  style="padding: 5px 10px; background-color: #ba0225; color: #fff; text-decoration: none; border-radius: 5px;  target=""_blank"> CRF Generator BRIDGE </a>. </p>
 
             <p> Instructions on <a href="https://isaricresearch.github.io/Training/bridge_template_link.html" target="_blank" style="padding: 5px 10px; background-color: #618685; color: #fff; text-decoration: none; border-radius: 5px;  ">  How to Get and Use ISARIC Approved Case Report Forms &#9432; </a></p>
              <p> Instructions on  <a href="https://isaricresearch.github.io/Training/bridge_starting.html"  target="_blank" style="padding: 5px 10px; background-color: #618685; color: #fff; text-decoration: none; border-radius: 5px;  "> How to use the CRF Generator BRIDGE, adapt ARChetype CRFs or create your own CRF &#9432; </a></p>
@@ -350,16 +424,25 @@
          <p>An ISARIC Statistical Analysis Plan (SAP) has been developed to align with the CCP and ISARIC ARchetype CRFs. This can be tailored to your needs and used for data analysis. </p>
           <p> Examples are available in <a href="https://isaricresearch.github.io/CCP-Study-Documents/ccp_resources"  target="_blank" style="padding: 5px 10px; background-color: #ba0225; color: #fff; text-decoration: none; border-radius: 5px;" > CCP Resources Library </a> </p> 
         <h3>Use our Visualisation and analysis tools VERTEX </h3>
-       ISARIC also provides a set of analytic tools called VERTEX, designed to perform the analyses outlined in the SAP using ISARIC's data structures. 
-       VERTEX generates tables and visualisations using Python code, and displays this information for each relevant research question or study endpoint,
-       in a web application dashboard.
-        VERTEX is built using reproducible analytical pipelines. It is designed to allow ISARIC partners and the broader scientific community to develop, contribute to, and share their own analytic 
-       codes so that other researchers can use and reproduce them. </p>
+       <p> ISARIC also provides a set of analytic tools called VERTEX, designed to perform the analyses outlined in the SAP using ISARIC's data structures. 
+       VERTEX generates automatically tables and visualisations using Python code, and displays this information for each relevant research question or study endpoint,
+       in a web application dashboard. All analytics can be tailored to fit the needs of your data.</p>
+        <p> VERTEX is built using reproducible analytical pipelines. It is designed to allow ISARIC partners and the broader scientific community to develop,
+                contribute to, and share their own analytic codes so that other researchers can use and reproduce them. </p>
             
                         <p>Instructions on <a href="https://isaricresearch.github.io/Training/vertex_starting"  target="_blank" style="padding: 5px 10px; background-color: #618685; color: #fff; text-decoration: none; border-radius: 5px; " ">How to get started with VERTEX</a></p>
                         <p>Instructions on <a href="https://isaricresearch.github.io/Training/insight_panel"  target="_blank" style="padding: 5px 10px; background-color: #618685; color: #fff; text-decoration: none; border-radius: 5px; "  >How to create additional visualisations for the VERTEX dashboard</a></p>
-                 
+    <p> ISARIC can support your implementation of these tools which may be downloaded at your site and/or used for aggregate analysis of multi-site datasets 
+            using ISARIC’s data governance framework.</p>
    </div>
+
+
+               <!-- STEP 9   -->
+        <button class="accordion"> <font color="#ba0225"> <i class="material-icons">group_add</i> Step 9:Inform clinical care, public health response, and clinical trial design</font></button>
+        <div class="panel">
+      <p>Share your evidence widely, including with those who are making clinical and public health decisions, and those undertaking further research. </p
+                     
+            </div>
         </div>
  
     
