@@ -4,5 +4,5 @@ ISARIC's Clinical Characterisation Protocol Operationalisation Toolkit webpages 
 
 Code and documents of those webpages are saved in this repository containing disease-agnostic and disease-specific versions study documents:
 - Core folder contains generic template and guidance documents
-- Disease Specific folder contains disesase specific template documents and documents from implemented studies ( including SAP of Partners Analyis) 
+- Disease Specific folder contains disease specific template documents and documents from implemented studies ( including SAP of Partners Analysis) 
 - Docs contains the code of the CCP operationalisaiton toolkit webpages
