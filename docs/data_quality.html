@@ -33,36 +33,41 @@
         <p class="mt-2">The Data Quality Checks Plan can be included in the Data Management Plan.</p>
         
         <h2 class="text-xl font-bold mt-6 text-[#ba0225]">DATA QUALITY CHECKS</h2>
-        <h3 class="text-lg font-semibold mt-4 text-[#ba0225]">LEVEL 1: Good Questionnaire Design and Programming</h3>
+        <h3 class="text-lg font-semibold mt-4 text-[#ba0225]">LEVEL 1: eCRF Design and Programming</h3>
+        <p>If you created your eCRF using the ISARIC CRF Generator <a href="https://isaric-bridge.replit.app/"  style="padding: 5px 10px; background-color: #ba0225; color: #fff; text-decoration: none; border-radius: 5px;  target=""_blank"> BRIDGE </a>, 
+            the REDCap data dictionnary generated is designed following these principles. 
         <ul class="list-disc list-inside mt-2 space-y-2">
-            <li>Real-time field-level validation when entering data.</li>
-            <li>Data validation rules on the eCRF for consistency (e.g., numerical limits, date restrictions, variable consistency).</li>
-            <li>Specific code for missing data (e.g., use “UNK” for unknown data).</li>
-            <li>Avoid free text fields unless necessary; monitor responses to refine question types.</li>
-            <li>Provide guidance for completing eCRF or pCRF to ensure consistency and accuracy.</li>
+            <li> <b>Data validation rules </b>  Real-time data validation rules on the eCRF for consistency (e.g., numerical limits, date restrictions, variable consistency). <i> IN REDCap, they will appear in the “Codebook”  in the column field attributes. You can also add any other relevant rules to your study</i></li>
+            <li> <b>Specific code for missing data </b>Specific code for missing data (e.g., use “UNK” for unknown data).<i>  In ISARIC BRIDGE REDCap dictionnary, Unknown is coded 99. You can also use the  "Missing Data Codes" Feature of REDCap </i>  </li>
+            <li> <b> Avoid free text fields</b> unless necessary; monitor responses to refine question types.</li>
+            <li> <b> Provide guidance  </b> for completing eCRF or pCRF to ensure consistency and accuracy.  A completion guide is automatically created when a CRF is genrated in BRIDGE </i></li>
+           
         </ul>
         
         <h3 class="text-lg font-semibold mt-4 text-[#ba0225]">LEVEL 2: Training</h3>
+        <p> Staff responssible of enterning data should be train to the use of REDCap and the use of the database. </p>
+        <p><i>  Resource for REDCap training and ISARIC database data entry are available in the  </i>
+            <a href="https://isaricresearch.github.io/CCP-Study-Documents/ccp_resources"  target="_blank" style="display: inline-block; padding: 10px 30px; background-color: #ba0225; color: #fff; text-decoration: none; border-radius: 5px;  "> <i class="material-icons"> library_books </i> CCP Resources Library </a>   </p>
         
         <h3 class="text-lg font-semibold mt-4 text-[#ba0225]">LEVEL 3: Data Quality Checks</h3>
         <h4 class="font-semibold mt-3">1. On-Site Data Entry Check</h4>
         <ul class="list-disc list-inside mt-2 space-y-2">
             <li><strong>Visual Check:</strong> Compare entered data with source documents.</li>
-            <li><strong>Double Data Entry:</strong> Two different people enter data for accuracy verification.</li>
+            <li><strong>Double Data Entry:</strong> Two different people enter data for accuracy verification. <i> REDCap offers a double data entry module</i></li>
             <li><strong>Scope:</strong> Check all or a proportion of entered data (e.g., 5-10% of participants).</li>
         </ul>
         
         <h4 class="font-semibold mt-3">2. Centralised Data Programming Checks</h4>
         <ul class="list-disc list-inside mt-2 space-y-2">
             <li><strong>Inconsistencies and completeness rules:</strong> Queries are generated and centrally executed across variables and time periods.</li>
-            <li><strong>Analyzing response distributions:</strong> Identifies outliers or irregular patterns.</li>
+            <li><strong>Analyzing response distributions:</strong> Identifies outliers or irregular patterns. <i> Visualisation of the data with  <a href="https://github.com/ISARICResearch/VERTEX"  target="_blank" style="display: inline-block; padding: 10px 30px; background-color: #ba0225; color: #fff; text-decoration: none; border-radius: 5px;  "> <i class="material-icons"> library_books </i> VERTEX  </a> helps to check this type of inconsitencies </i> </li>
         </ul>
         
         <h4 class="font-semibold mt-3">3. Scope</h4>
         <ul class="list-disc list-inside mt-2 space-y-2">
             <li>All variables.</li>
             <li>A proportion of variables.</li>
-            <li><strong>Primary Outcome Data:</strong> Recommended to check 100%.</li>
+            <li><strong>Primary Outcome Data:</strong> Recommended to check 100% of those variable .</li>
             <li>Ensure all variables used in the analysis are quality-checked.</li>
         </ul>
         
@@ -70,6 +75,7 @@
         <ul class="list-disc list-inside mt-2 space-y-2">
             <li>After specific visits of certain patients.</li>
             <li>During study group meetings with dashboards for monitoring outcomes.</li>
+            <li>After last visit of X patients.</li>
         </ul>
         <p class="mt-2">Data quality checks should be continuous and occur close to data collection to maintain integrity and validity.</p>
         
