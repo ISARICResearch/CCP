@@ -60,6 +60,32 @@
         h2 {
             colour: rgb(186, 2, 37);
         }
+            table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 1em;
+    }
+    th, td {
+      border: 1px solid #aaa;
+      padding: 8px;
+      vertical-align: top;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    .note {
+      font-size: 0.9em;
+      color: #333;
+      font-style: italic;
+    }
+    .crf-link {
+      margin-left: 6px;
+      text-decoration: none;
+      font-size: 1em;
+    }
+    .dark-grey {
+      color: #555;
+    }
         .timeline {
             display: flex;
             flex-direction: column;
@@ -100,6 +126,13 @@
             padding: 10px 0;
             margin-top: 20px;
         }
+           @media screen and (max-width: 600px) {
+      .floating-box {
+        float: none;
+        width: 100%;
+        margin: 10px 0;
+      }
+    }
     </style>
      <script>
         function loadTime() {
@@ -116,43 +149,13 @@
         </a>
         <h1 style="color:White">ISARIC CCP ARChetype Case Report Form Creation Guidelines</h1>
     </header>
-
+ <div class="container">
 
          <section id="ARChetype CRFs">
        
             <p> ARChetype Case Report Forms (CRF) are a key component of the <a href="https://isaric.org/resources/clinical-characterisation-protocol/"> ISARIC-WHO Clinical Characterisation Protocol (CCP) </a> framework, strengthening global preparedness and response to infectious disease outbreaks.</p>
-  <style>
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 1em;
-    }
-    th, td {
-      border: 1px solid #aaa;
-      padding: 8px;
-      vertical-align: top;
-    }
-    th {
-      background-color: #f2f2f2;
-    }
-    .note {
-      font-size: 0.9em;
-      color: #333;
-      font-style: italic;
-    }
-    .crf-link {
-      margin-left: 6px;
-      text-decoration: none;
-      font-size: 1em;
-    }
-    .italic {
-      font-style: italic;
-    }
-  </style>
-</head>
-<body>
 
-    
+   
   <table>
     <thead>
       <tr>
@@ -177,11 +180,11 @@
       <tr>
         <td> <strong>Haemorrhagic Febrile Infections (viral)</strong></td>
         <td>
-          <span class="italic"> <strong>Viral Haemorrhagic Fever (VHF)</strong> – Hospitalised Population </span>
+          <span class="dark-grey"> <strong>Viral Haemorrhagic Fever (VHF)</strong> – Hospitalised Population </span>
         </td>
         <td>
           <strong>Dengue</strong> – Hospitalised patients<a href="https://bridge.isaric.org/main?param=ARChetype%20Disease%20CRF_Dengue" class="crf-link" title="CRF link">📄</a> <br> 
-          <strong>Yellow Fever</strong> – Hospitalised patients
+         <span class="dark-grey"> <strong>Yellow Fever</strong> – Hospitalised patients </span>
         </td>
       </tr>
       <tr>
@@ -190,7 +193,7 @@
           <strong>Arbovirus</strong> – Community patients
         </td>
         <td>
-           <span class="italic"> <strong>Oropouche</strong> – Hospitalised patients<br>
+           <span class="dark-grey">  <strong>Oropouche</strong> – Hospitalised patients<br>
          + Pregnant Women and Children module</span>
       
         </td>
@@ -198,7 +201,7 @@
       <tr>
         <td><strong>Brain Infections</strong></td>
         <td>
-         <span class="italic"> <strong>Encephalitis</strong> – Hospitalised Population </span>
+         <span class="dark-grey">  <strong>Encephalitis</strong> – Hospitalised Population </span>
         </td>
         <td></td>
       </tr>
@@ -209,13 +212,13 @@
            </td>
         <td>
           <strong>Mpox</strong> – Hospitalised Population <a href="https://bridge.isaric.org/main?param=ARChetype%20Disease%20CRF_Mpox" class="crf-link" title="CRF link">📄</a> <br> 
-             <span class="italic">+ Pregnant Women and Children module</span>
+             <span class="dark-grey"> + Pregnant Women and Children module</span>
         </td>
       </tr>
     </tbody>
   </table>
 
-  <p class="note">  <span class="italic"> CRF </span>: CRFs/modules under creation</p>
+  <p class="note">  <span class="dark-grey">  CRF </span>: CRFs/modules under creation</p>
 
     </section>
 
