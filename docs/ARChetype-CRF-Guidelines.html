@@ -117,29 +117,103 @@
         <h1 style="color:White">ISARIC CCP ARChetype Case Report Form Creation Guidelines</h1>
     </header>
 
-    <div class="container">
-        <!-- Floating Box -->
-        <div class="floating-box">
-            <strong style="color:White">Existing ARChetype CRFs:</strong>
-            <ul>
-                <li style="color:White"> <a href="https://bridge.isaric.org/main?param=ARChetype%20Disease%20CRF_Mpox" color:white; target="_blank"> Mpox </a> </li>
-                <li style="color:White"> <a href="https://bridge.isaric.org/main?param=ARChetype%20Disease%20CRF_H5Nx" color:white;; target="_blank">H5Nx </a> </li>
-                <li style="color:White"> <a href="https://bridge.isaric.org/main?param=ARChetype%20Disease%20CRF_Dengue" color:white; target="_blank">Dengue </a> </li>
-                <li style="color:White"> <a href="https://bridge.isaric.org/main?param=ARChetype%20Disease%20CRF_Covid" color:white; target="_blank">Covid </a> </li>
-                <li style="color:White"> <a href="https://bridge.isaric.org/main/?param=ARChetype%20Syndromic%20CRF_ARI" color:white; target="_blank">ARI </a> </li>
-              </ul>
-              <strong style="color:White">Ongoing ARChetype CRFs:</strong>
-            <ul>
-                <li style="color:White">Mpox for pregnant women and children </li>
-                <li style="color:White">ARI for pregnant women and children</li>
-                <li style="color:White">Encephalitis</li>
-                <li style="color:White">Oropouche</li>
-                <li style="color:White">Yellow Fever</li>
-                <li style="color:White">Early Arbovirus</li>
-                 <li style="color:White">VHF</li>
+   
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 1em;
+    }
+    th, td {
+      border: 1px solid #aaa;
+      padding: 8px;
+      vertical-align: top;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    .note {
+      font-size: 0.9em;
+      color: #333;
+      font-style: italic;
+    }
+    .crf-link {
+      margin-left: 6px;
+      text-decoration: none;
+      font-size: 1em;
+    }
+    .italic {
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ARChetype CRFs <br>  (Available and under creation )</th>
+        <th>Syndromic</th>
+        <th>Disease Specific</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Respiratory Infections</strong></td>
+        <td>
+          <strong>ARI Syndrome</strong> – Hospitalised Population <a href="https://bridge.isaric.org/main/?param=ARChetype%20Syndromic%20CRF_ARI " class="crf-link" title="CRF link">📄</a> <br> 
+          <span class="italic">+ Pregnant Women and Children module</span>
           
-            </ul>
-        </div>
+        </td>
+        <td>
+          <strong>Covid</strong> – Hospitalised patients <a href="https://bridge.isaric.org/main?param=ARChetype%20Disease%20CRF_Covid" class="crf-link" title="CRF link">📄</a> <br> 
+          <strong>H5Nx</strong> – Hospitalised patients <a href="https://bridge.isaric.org/main?param=ARChetype%20Disease%20CRF_H5Nx" class="crf-link" title="CRF link">📄</a> 
+        </td>
+      </tr>
+      <tr>
+        <td> <strong>Haemorrhagic Febrile Infections (viral)</strong></td>
+        <td>
+          <span class="italic"> <strong>Viral Haemorrhagic Fever (VHF)</strong> – Hospitalised Population </span>
+        </td>
+        <td>
+          <strong>Dengue</strong> – Hospitalised patients<a href="https://bridge.isaric.org/main?param=ARChetype%20Disease%20CRF_Dengue" class="crf-link" title="CRF link">📄</a> <br> 
+          <strong>Yellow Fever</strong> – Hospitalised patients
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Arboviral Infections</strong></td>
+        <td>
+          <strong>Arbovirus</strong> – Community patients
+        </td>
+        <td>
+           <span class="italic"> <strong>Oropouche</strong> – Hospitalised patients<br>
+         + Pregnant Women and Children module</span>
+      
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Brain Infections</strong></td>
+        <td>
+         <span class="italic"> <strong>Encephalitis</strong> – Hospitalised Population </span>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><strong>Mucocutaneous Infections</strong></td>
+        <td>
+         
+           </td>
+        <td>
+          <strong>Mpox</strong> – Hospitalised Population <a href="https://bridge.isaric.org/main?param=ARChetype%20Disease%20CRF_Mpox" class="crf-link" title="CRF link">📄</a> <br> 
+             <span class="italic">+ Pregnant Women and Children module</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="note">CRF: CRFs/modules under creation</p>
+
+
 
         <section id="background">
        
