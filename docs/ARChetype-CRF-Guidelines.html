@@ -65,6 +65,22 @@
       border-collapse: collapse;
       margin-bottom: 1em;
     }
+            .red-button {
+      background-color: #f44336; /* Red background */
+      color: white;              /* White text */
+      padding: 10px 15px;        /* Padding for size */
+      text-align: center;        /* Centered text */
+      text-decoration: none;     /* Remove underline */
+      display: inline-block;     /* Inline-block for button-like appearance */
+      border-radius: 2px;        /* Rounded corners */
+      font-weight: bold;         /* Bold text */
+      font-family: Arial, sans-serif; /* Font style */
+      transition: background-color 0.3s ease; /* Smooth hover transition */
+    }
+
+    .red-button:hover {
+      background-color: #d32f2f; /* Darker red on hover */
+    }
     th, td {
       border: 1px solid #aaa;
       padding: 8px;
@@ -200,8 +216,8 @@ table thead th:nth-child(3) {
           
         </td>
         <td>
-          <strong>Covid</strong> – Hospitalised patients <a href="https://bridge.isaric.org/main?param=ARChetype%20Disease%20CRF_Covid" class="crf-link" title="CRF link">📄</a> <br> 
-          <strong>H5Nx</strong> – Hospitalised patients <a href="https://bridge.isaric.org/main?param=ARChetype%20Disease%20CRF_H5Nx" class="crf-link" title="CRF link">📄</a> 
+          <strong>Covid</strong> – Hospitalised patients <a href="https://bridge.isaric.org/main?param=ARChetype%20Disease%20CRF_Covid" class="red-button" title="CRF link">📄 See CRF</a> <br> 
+          <strong>H5Nx</strong> – Hospitalised patients <a href="https://bridge.isaric.org/main?param=ARChetype%20Disease%20CRF_H5Nx" class="red-button" title="CRF link">📄 See CRF </a> 
         </td>
       </tr>
       <tr>
@@ -210,7 +226,7 @@ table thead th:nth-child(3) {
           <span class="dark-grey"> <strong>Viral Haemorrhagic Fever (VHF)</strong> – Hospitalised Population </span>
         </td>
         <td>
-          <strong>Dengue</strong> – Hospitalised patients<a href="https://bridge.isaric.org/main?param=ARChetype%20Disease%20CRF_Dengue" class="crf-link" title="CRF link">📄</a> <br> 
+          <strong>Dengue</strong> – Hospitalised patients<a href="https://bridge.isaric.org/main?param=ARChetype%20Disease%20CRF_Dengue" class="red-button" title="CRF link">📄 See CRF </a> <br> 
          <span class="dark-grey"> <strong>Yellow Fever</strong> – Hospitalised patients </span>
         </td>
       </tr>
@@ -238,7 +254,7 @@ table thead th:nth-child(3) {
          
            </td>
         <td>
-          <strong>Mpox</strong> – Hospitalised Population <a href="https://bridge.isaric.org/main?param=ARChetype%20Disease%20CRF_Mpox" class="crf-link" title="CRF link">📄</a> <br>  
+          <strong>Mpox</strong> – Hospitalised Population <a href="https://bridge.isaric.org/main?param=ARChetype%20Disease%20CRF_Mpox" class="red-button" title="CRF link">📄 See CRF</a> <br>  
              <span class="dark-grey"> + Pregnant Women and Children module</span>
         </td>
       </tr>
