@@ -1,6 +1,6 @@
 ISARIC's Clinical Characterisation Protocol Operationalisation Toolkit webpages are available here : 
-- ISARIC CCP Global Toolkit https://isaricresearch.github.io/CCP-Study-Documents/CCP_toolkit
-- ISARIC CCP Resources Library https://isaricresearch.github.io/CCP-Study-Documents/ccp_resources
+- ISARIC CCP Global Toolkit https://isaricresearch.github.io/CCP/CCP_toolkit
+- ISARIC CCP Resources Library https://isaricresearch.github.io/CCP/ccp_resources
 
 Code and documents of those webpages are saved in this repository containing disease-agnostic and disease-specific versions study documents:
 - Core folder contains generic template and guidance documents
