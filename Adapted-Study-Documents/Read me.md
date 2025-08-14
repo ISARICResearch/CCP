@@ -8,8 +8,8 @@
 
 **Naming convention:**  
 Naming convention:  DocumentType_Disease_Source_Version_Date
-Additional requirement:
-All documents must also include the following information within the first couple of pages:
+
+Additional requirement: All documents must also include the following information within the first couple of pages:
 -Source
 - Disease (if applicable)
 - Version
