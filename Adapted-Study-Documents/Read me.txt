@@ -1,4 +1,4 @@
-CC Adapted Study Documents Folder
+CCP Adapted Study Documents Folder
 CCP documents developed for a specific disease or specific context:
 •	Mpox – All documents specific to mpox
 •	Dengue – All documents specific to dengue
