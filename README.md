@@ -21,9 +21,17 @@ Includes:
 
 > **Naming convention:** **`DocumentType_Disease`**
 
+
 ---
 
-## 3. Study Documents  
+## 3. Data Governance   
+Includes:  
+- ISARIC TECHNICAL AND ORGANISATIONAL MEASURES (TOMs)   
+
+
+---
+
+## 4. Study Documents  
 Includes:  
 - Main CCP protocol  
 - Template study documentation  
@@ -32,7 +40,7 @@ Includes:
 
 ---
 
-##  4. docs: CCP Webpages codes
+##  5. docs: CCP Webpages codes
 ISARIC's Clinical Characterisation Protocol Operationalisation Toolkit webpages are accessible here : 
 - ISARIC CCP Global Toolkit https://isaricresearch.github.io/CCP/CCP_toolkit
 - ISARIC CCP Resources Library https://isaricresearch.github.io/CCP/ccp_resources
